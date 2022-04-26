@@ -1,9 +1,68 @@
 /* Home Page */
-.jumbotron {
-    background-color: beige;
-    padding: 50px;
+#home {
+    background-color: #CACEB5;
 }
-
+.section-top {
+    padding: 20px;
+}
+.section-bottom {
+    padding: 20px;
+}
+.card {
+    border-radius: 15px;
+}
+.cardImg-rect {
+    width: 400px;
+    height: 250px;
+    margin: 25px auto;
+    border-radius: 15px;
+}
+.card-body {
+    margin: 0 10px;
+}
+.button-home {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #4E615B;
+    border: none;
+    padding: 8px;
+    font-size: 15px;
+    color: #ECE6DA;
+}
+.button-home:hover {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: solid 3px #4E615B;
+    padding: 8px;
+    font-size: 15px;
+    color: #4E615B;
+}
+.image2 {
+    margin: 25px 25px;
+    border-radius: 15px;
+    height: 250px;
+}
+.listgroup-item {
+    margin: 10px;
+    height: 59.45px;
+}
+.card-long {
+    height: 160px;
+}
+.card-header{
+    font-size: 40px;
+    text-align: center;
+}
+.card-title {
+    text-transform: uppercase;
+}
+.card-pastEvents {
+    margin-bottom: 15px;
+}
+.past-events {
+    padding: 14.4px 0;
+}
 /* Create User Page */
 .form-createUser {
     padding: 50px;

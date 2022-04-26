@@ -19,7 +19,7 @@ function App() {
       <AppNavbar/>
       {/* <EventCard /> */}
       <Routes>
-        {/* <Route path="/" element={ <Home/> }/> */}
+        <Route path="/" element={ <Home/> }/>
         <Route path="/register" element={ <CreateUser/> }/>
         {/* <Route path="/" element={ <CreateEvent/> }/> */}
         {/* <Route path="/" element={ <AllUsers/> }/> */}

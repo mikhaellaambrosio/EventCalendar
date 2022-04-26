@@ -25,7 +25,7 @@ export default function CreateUser() {
         e.preventDefault()
 
         // alert(`You have successfully created an account!`)
-        fetch('http://localhost:3005/api/users//register', {
+        fetch('http://localhost:3005/api/users/register', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

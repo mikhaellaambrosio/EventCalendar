@@ -1,3 +1,11 @@
 .card-event {
     padding: 50px;
 }
+
+/* Navbar */
+.navbar {
+    background-color: #E1D5C9;
+}
+.nav-link {
+    color: #1F2532;
+}
