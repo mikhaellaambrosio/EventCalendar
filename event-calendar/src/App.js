@@ -20,10 +20,10 @@ function App() {
       {/* <EventCard /> */}
       <Routes>
         {/* <Route path="/" element={ <Home/> }/> */}
-        {/* <Route path="/" element={ <CreateUser/> }/> */}
+        <Route path="/register" element={ <CreateUser/> }/>
         {/* <Route path="/" element={ <CreateEvent/> }/> */}
         {/* <Route path="/" element={ <AllUsers/> }/> */}
-        <Route path="/" element={ <AllEvents/> }/>
+        {/* <Route path="/" element={ <AllEvents/> }/> */}
 
 
 

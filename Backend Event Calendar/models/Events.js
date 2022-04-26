@@ -6,8 +6,12 @@ const eventSchema = new mongoose.Schema ({
         required: [true, `Event Title is required!`]
     },
     eventDate: {
-        type: Date,
+        type: String,
         required: [true, `Event Date is required!`]
+    },
+    eventTime: {
+        type: Number,
+        required: [true, `Event Time is required!`]
     },
     eventLocation: {
         type: String,
@@ -17,10 +21,10 @@ const eventSchema = new mongoose.Schema ({
         type: String,
         required: [true, `Event Decription is required!`]
     },
-    guests: {
+    guests: [{
         type: String,
         required: [true, `Event Guests is required!`]
-    }
+    }]
 }, {timestamps: true})
 
-module.exports = mongoose.model(`Event`, userSchema)
+module.exports = mongoose.model(`Event`, eventSchema)

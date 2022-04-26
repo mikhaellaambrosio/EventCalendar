@@ -39,3 +39,31 @@ module.exports.register = async (reqBody) => {
 		}
 	})
 }
+
+// GET ALL USERS
+module.exports.getAllUsers = async () => {
+    return await User.find().then(result => result)
+}
+
+
+// LOGIN A USER
+module.exports.login = async (reqBody) => {
+    return await User.findOne({email: reqBody.email}).then((result, err) => {
+        if(result == null){
+            return (`User does not exist`)
+        } else {
+           if (result !== null){
+               const decryptedPw = CryptoJS.AES.decrypt(result.password, process.env.SECRET_PASS).toString(CryptoJS.enc.Utf8)
+
+               if(reqBody.password == decryptedPw) {
+                   return {token: createToken(result)}
+                   
+               } else {
+                   return {auth: `Authentication Failed!`}
+               }
+           } else {
+               return err
+           }
+        }
+    })
+}
