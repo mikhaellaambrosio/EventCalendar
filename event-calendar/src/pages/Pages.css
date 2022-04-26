@@ -1,0 +1,15 @@
+/* Home Page */
+.jumbotron {
+    background-color: beige;
+    padding: 50px;
+}
+
+/* Create User Page */
+.form-createUser {
+    padding: 50px;
+}
+
+/* Create Event Page */
+.form-createEvent {
+    padding: 50px;
+}
