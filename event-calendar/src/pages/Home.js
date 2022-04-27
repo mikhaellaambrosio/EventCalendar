@@ -18,11 +18,11 @@ export default function Home() {
         <Fragment>
             <div id="home">
             <div className="section-top">
-            <Row>
+            <Row className="justify-content-center">
                 <div className="group-header">
                     <h2 className="m-0">Featured Event</h2>
                 </div>
-                <Col md={5}>
+                <Col md={6}>
                     <Row>
                     <Card className="card">
                     <Row>
