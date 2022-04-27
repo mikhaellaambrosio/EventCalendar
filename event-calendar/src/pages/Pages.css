@@ -11,6 +11,27 @@
 .card {
     border-radius: 15px;
 }
+@media (min-width: 400px) {
+    .group-header {
+        margin: 20px 0;
+        background-color: #ECE6DA; 
+        padding: 10px;
+        text-align: center;
+        color: #1F2532;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+}
+@media (min-width: 576px) {
+    .image2 {
+        width: 200px;
+        height: 150px;
+    }
+    .cardImg-rect {
+        display: none;
+    }
+    
+}
 .cardImg-rect {
     width: 400px;
     height: 250px;
@@ -63,6 +84,44 @@
 .past-events {
     padding: 14.4px 0;
 }
+.buttonModal-home {
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: rgba(78, 97, 91, 0.3);
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    color: #4E615B;
+}
+.buttonModal-home:hover {
+    width:100px;
+    margin-bottom: 10px;
+    background-color: rgba(78, 97, 91, 0.3);
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    color: #4E615B;
+}
+.modal-header {
+    background-color: #CACEB5;
+}
+.modal-body {
+    background-color: #ECE6DA;
+}
+.modal-footer {
+    background-color: #ECE6DA;
+}
+.modal-title {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.modal-dateTime {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 /* Create User Page */
 .form-createUser {
     padding: 50px;

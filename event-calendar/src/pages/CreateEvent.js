@@ -10,7 +10,7 @@ export default function CreateEvent() {
     const [eventTime, setEventTime] = useState(``);
     const [eventLocation, setEventLocation] = useState(``);
     const [eventDescription, setEventDescription] = useState(``);
-    const [guests, setGuests] = useState(0);
+    const [guests, setGuests] = useState(``);
     const [isDisabled, setIsDisabled] = useState(true);
 
     const navigate = useNavigate()
