@@ -7,20 +7,20 @@ export default function AllUsers() {
         <Container className="dashborad-grp">
         <h1 className="mt-5 mb-3 text-center">User Dashboard</h1>
         <div className="dashboard-btn text-right">
-            <Link className="btn-admin btn  m-2" to={`/createProduct`}>
-            Add Product
+            <Link className="btn-admin btn  m-2" to={`/register`}>
+            Add User
             </Link>
-            <Link className="btn-admin btn  m-2" to={`/allUsers`}>
-            User Dashboard
+            <Link className="btn-admin btn  m-2" to={`/allEvents`}>
+            Event Dashboard
             </Link>
         </div>
         <Table>
             <thead>
             <tr className="text-center">
                 <th>ID</th>
-                <th>Product Name</th>
-                <th>Price</th>
-                <th>Status</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
                 <th>Actions</th>
             </tr>
             </thead>

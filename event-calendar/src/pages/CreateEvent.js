@@ -1,6 +1,6 @@
-import {Form, Button} from 'react-bootstrap'
+import {Form, Button, Col, Row} from 'react-bootstrap'
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 
 export default function CreateEvent() {
@@ -53,8 +53,10 @@ export default function CreateEvent() {
 
     return (
         <div className='form-createEvent'>
+        <Row className="justify-content-center" >
+        <Col  xs={12} md={10}>
         <Form id="form-createEvent" className="w-100" onSubmit={(e) => handleSubmit(e)} >
-            <h1>Create Event</h1>
+            <h1 className='page-heading'>Create Event</h1>
             <Form.Group className="mb-3" controlId="formBasicEventTitle">
                 <Form.Label>Event Title</Form.Label>
                 <Form.Control type="text" placeholder="Enter Event Title" value={eventTitle} onChange={(e) => setEventTitle(e.target.value)}/>
@@ -79,10 +81,14 @@ export default function CreateEvent() {
                 <Form.Label>Event Guests</Form.Label>
                 <Form.Control type="email" placeholder="Add Guests" value={guests} onChange={(e) => setGuests(e.target.value)} />
             </Form.Group>
-        <Button variant="primary" type="submit">
+            <Button type="submit" className='button-create'>
             Save
-        </Button>
+            </Button>
         </Form>
+        </Col>
+        </Row>
+        
+        
         </div>
     )
 }

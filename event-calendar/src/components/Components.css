@@ -4,8 +4,20 @@
 
 /* Navbar */
 .navbar {
-    background-color: #E1D5C9;
+    background-color: #1F2532;
+}
+.nav-group {
+    position: fixed;
+    right: 50px;
 }
 .nav-link {
-    color: #1F2532;
+    color: #ECE6DA !important;
+    margin-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.navbar-brand {
+    color: #ECE6DA !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }

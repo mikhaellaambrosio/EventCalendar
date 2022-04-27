@@ -3,7 +3,7 @@
     background-color: #CACEB5;
 }
 .section-top {
-    padding: 20px;
+    padding: 20px 20px 0;
 }
 .section-bottom {
     padding: 20px;
@@ -11,7 +11,10 @@
 .card {
     border-radius: 15px;
 }
-@media (min-width: 400px) {
+.card-title {
+    letter-spacing: 2px;
+}
+@media (max-width: 575px) {
     .group-header {
         margin: 20px 0;
         background-color: #ECE6DA; 
@@ -21,11 +24,28 @@
         border-radius: 10px;
         text-transform: uppercase;
     }
+    .image2 {
+        display: none;
+    }
+    .attendees {
+        display: none;
+    }
 }
 @media (min-width: 576px) {
+    .group-header {
+        margin: 20px 0;
+        background-color: #ECE6DA; 
+        padding: 10px;
+        text-align: center;
+        color: #1F2532;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
     .image2 {
-        width: 200px;
+        width: 100%;
         height: 150px;
+        padding: 20px 25px;
+        height: 250px;
     }
     .cardImg-rect {
         display: none;
@@ -60,13 +80,23 @@
     color: #4E615B;
 }
 .image2 {
-    margin: 25px 25px;
     border-radius: 15px;
-    height: 250px;
 }
 .listgroup-item {
     margin: 10px;
     height: 59.45px;
+}
+.card-link {
+    width: 100%;
+    margin: 10px 0;
+}
+.button-tertiary {
+    text-decoration: none;
+    border: 3px solid #4E615B;
+    color:#4E615B;
+    font-size: 16px;
+    background-color: transparent;
+    width: 100%;
 }
 .card-long {
     height: 160px;
@@ -126,8 +156,42 @@
 .form-createUser {
     padding: 50px;
 }
+.button-createUser {
+    width:100%;
+    background-color: transparent;
+    border: 3px solid #ECE6DA;
+    color: #4E615B;
+    margin-top: 15px;
+}
+.button-createUser:hover {
+    width:100%;
+    background-color: #4E615B;
+    border: 3px solid #4E615B;
+    color: #ECE6DA;
+    margin-top: 15px;
+}
 
 /* Create Event Page */
 .form-createEvent {
     padding: 50px;
+}
+.button-create {
+    width:100%;
+    background-color: transparent;
+    border: 3px solid #ECE6DA;
+    color: #4E615B;
+    margin-top: 15px;
+}
+.button-create:hover {
+    width:100%;
+    background-color: #4E615B;
+    border: 3px solid #4E615B;
+    color: #ECE6DA;
+    margin-top: 15px;
+}
+.page-heading {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
 }

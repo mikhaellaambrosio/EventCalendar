@@ -6,13 +6,12 @@ export default function AppNavbar() {
 
         <Navbar sticky='top' className='navbar' expand="lg">
         <Container>
-            <Navbar.Brand href="#home">Glyph Studios</Navbar.Brand>
+            <Navbar.Brand href="/">Glyph Studios</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-                <Nav.Link href="#home" className='nav-link'>Home</Nav.Link>
-                <Nav.Link href="#profile" className='nav-link'>Profile</Nav.Link>
-                <Nav.Link href="#events" className='nav-link'>Events</Nav.Link>
+            <Nav className='nav-group'>
+                <Nav.Link href="/" className='nav-link'>Home</Nav.Link>
+                <Nav.Link href="/allEvents" className='nav-link'>Events</Nav.Link>
                 <Nav.Link href="#calendar" className='nav-link'>Calendar</Nav.Link>
             </Nav>
             </Navbar.Collapse>

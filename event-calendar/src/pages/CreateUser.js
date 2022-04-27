@@ -1,6 +1,8 @@
 import {Form, Button, Container, Row, Col} from 'react-bootstrap'
 import {useEffect, useState} from "react"
 import {useNavigate} from "react-router-dom"
+import './Pages.css'
+
 
 export default function CreateUser() {
 
@@ -43,7 +45,7 @@ export default function CreateUser() {
             if(response){
                 alert(`Registration Successful!`)
 
-                navigate('/login')
+                navigate('/')
             }
         })
     }
@@ -52,9 +54,9 @@ export default function CreateUser() {
         <div className='form-createUser'>
         <Container fluid id="register-form" className="m-0 mt-3">
             <Row className="justify-content-center m-0">
-            <Col  xs={10} md={6}>
-                    <Form onSubmit={(e) => registerUser(e)}>
-                        <h3 className="text-center p-3">CREATE AN ACCOUNT </h3>
+            <Col  xs={12} md={8}>
+                    <Form onSubmit={(e) => registerUser(e)} className="w-100">
+                        <h2 className="page-heading">CREATE AN ACCOUNT </h2>
                         <Form.Group className="mb-3">
                             <Form.Label>First Name</Form.Label>
                             <Form.Control 
@@ -95,15 +97,12 @@ export default function CreateUser() {
                                 onChange = {(e) => setCpw(e.target.value)}
                             />
                         </Form.Group>
-                        <div >
                         <Button id="button-register"
-                            className="w-100 mb-3"
+                            className="button-createUser w-100 mt-4"
                             type="submit"
-                            disabled = {isDisabled}
                         >
                             Submit
                         </Button>
-                        </div>
                     </Form>
             </Col>
         </Row>
