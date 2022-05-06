@@ -21,3 +21,6 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+.navbar-toggle .nav-link {
+    color: #1F2532;
+}
