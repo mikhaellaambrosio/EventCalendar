@@ -13,6 +13,7 @@ export default function AppNavbar() {
                 <Nav.Link href="/" className='nav-link'>Home</Nav.Link>
                 <Nav.Link href="/allEvents" className='nav-link'>Events</Nav.Link>
                 <Nav.Link href="#calendar" className='nav-link'>Calendar</Nav.Link>
+                <Nav.Link href="/login" className='nav-link'>Login</Nav.Link>
             </Nav>
             </Navbar.Collapse>
         </Container>

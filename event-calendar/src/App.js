@@ -7,6 +7,7 @@ import CreateUser from "./pages/CreateUser"
 import CreateEvent from "./pages/CreateEvent"
 import AllUsers from "./pages/AllUsers"
 import AllEvents from "./pages/AllEvents"
+import Login from "./pages/Login"
 
 import AppNavbar from './components/AppNavbar';
 import EventCard from './components/EventCard';
@@ -23,6 +24,7 @@ function App() {
         <Route path="/createEvent" element={ <CreateEvent/> }/>
         <Route path="/allUsers" element={ <AllUsers/> }/>
         <Route path="/allEvents" element={ <AllEvents/> }/>
+        <Route path="/login" element={ <Login/> }/>
 
       </Routes>
       </BrowserRouter>
